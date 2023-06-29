@@ -1,0 +1,199 @@
+/* Main content styling */
+.main-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.main-content h2 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Eras bold ITC';
+}
+
+.send-money-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.send-money-button:hover {
+    
+    background-color: #84d388;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    flex-basis: 250px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #45a049;
+}
+
+.social-links a {
+    color: #ccc;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+.additional-text {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+/* Conversion section styling */
+.conversion-section {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.conversion-info {
+    flex: 1;
+}
+
+.conversion-info h3 {
+    font-size: 24px;
+}
+
+.conversion-info p {
+    font-size: 16px;
+}
+
+.conversion-form {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form-left {
+    margin-right: 40px;
+}
+
+.form-left label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-left input[type="number"],
+.form-left select {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.form-right label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-right input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.form-right input[readonly] {
+    background-color: #f9f9f9;
+}
+
+.form-right input[readonly]:focus {
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.form-right input[readonly]::placeholder {
+    color: #777;
+}
+
+.form-right button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-right button:hover {
+    background-color: #45a049;
+}
