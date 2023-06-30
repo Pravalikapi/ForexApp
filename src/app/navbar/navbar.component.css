@@ -1,4 +1,4 @@
-/* Navbar styling */
+/* 
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -21,4 +21,55 @@
 .navbar-right {
     float: right;
 }
+ */
 
+ /* Navbar styling */
+ .navbar {
+    background-color: white;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "calibri";
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo .logo-image {
+    width: 90px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    margin-top: -7px; /* Adjust the margin as needed */
+}
+
+.navbar a.logo {
+    font-family: 'forte';
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.navbar a.logo:before {
+    content: "\f1af";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+    font-size: 16px;
+}

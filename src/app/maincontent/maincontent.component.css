@@ -197,3 +197,13 @@
 .form-right button:hover {
     background-color: #45a049;
 }
+.image2-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image2-container img {
+    margin: 0;
+    padding: 0;
+  }
+  

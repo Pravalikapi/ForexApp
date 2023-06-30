@@ -6,24 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./maincontent.component.css']
 })
 export class MaincontentComponent {
-  sendAmount: number | null = null;
-  fromCountry: string | null = null;
-  toCountry: string | null = null;
-  exchangeRates: { [key: string]: number } = {
-    USD: 1,
-    INR: 80,  // USD to INR
-    GBP: 0.9, // USD to GBP
-    EUR: 0.8, // USD to EUR
-    AUD: 1.2  // USD to AUD
-  };
+//   sendAmount: number | null = null;
+//   fromCountry: string | null = null;
+//   toCountry: string | null = null;
+//   exchangeRates: { [key: string]: number } = {
+//     USD: 1,
+//     INR: 80,  // USD to INR
+//     GBP: 0.9, // USD to GBP
+//     EUR: 0.8, // USD to EUR
+//     AUD: 1.2  // USD to AUD
+//   };
 
-  calculateReceiveAmount(): number | null {
-    if (this.sendAmount && this.fromCountry && this.toCountry) {
-      const fromExchangeRate = this.exchangeRates[this.fromCountry];
-      const toExchangeRate = this.exchangeRates[this.toCountry];
-      return (this.sendAmount / fromExchangeRate) * toExchangeRate;
-    } else {
-      return null;
-    }
-  }
+//   calculateReceiveAmount(): number | null {
+//     if (this.sendAmount && this.fromCountry && this.toCountry) {
+//       const fromExchangeRate = this.exchangeRates[this.fromCountry];
+//       const toExchangeRate = this.exchangeRates[this.toCountry];
+//       return (this.sendAmount / fromExchangeRate) * toExchangeRate;
+//     } else {
+//       return null;
+//     }
+//   }
+// }
 }
