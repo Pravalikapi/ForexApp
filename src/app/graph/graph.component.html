@@ -1,1 +1,33 @@
-<p>graph works!</p>
+<div class="card">
+    <div class="card-header">
+      <h1>Forex Exchange Rate Graph</h1>
+    </div>
+    <div class="card-body">
+      <div class="chart-container">
+        <canvas #exchangeRateGraph></canvas>
+      </div>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <label for="country1">Country 1:</label>
+          <select id="country1" [(ngModel)]="country1" (change)="updateChart()">
+            <option value="INR">India</option>
+            <option value="USD">USA</option>
+            <option value="GBP">UK</option>
+            <option value="EUR">France</option>
+            <option value="JPY">Japan</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="country2">Country 2:</label>
+          <select id="country2" [(ngModel)]="country2" (change)="updateChart()">
+            <option value="INR">India</option>
+            <option value="USD">USA</option>
+            <option value="GBP">UK</option>
+            <option value="EUR">France</option>
+            <option value="JPY">Japan</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  

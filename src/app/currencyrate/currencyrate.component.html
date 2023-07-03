@@ -1,1 +1,52 @@
-<p>currencyrate works!</p>
+
+<app-graph></app-graph>
+
+   <div class="container">
+    <h1>Forex Conversion</h1>
+    <form (submit)="convertCurrency()">
+      <div class="form-group">
+        <label for="amountInput">You Send Exactly</label>
+        <input type="number" class="form-control" id="amountInput" [(ngModel)]="amount" name="amount" required>
+      </div>
+      <div class="form-group">
+        <label for="fromCountrySelect">From Country</label>
+        <div class="select-container">
+          <select class="form-control" id="fromCountrySelect" [(ngModel)]="fromCountry" name="fromCountry" (change)="onCountryChange('from')">
+            <option *ngFor="let rate of exchangeRates" [value]="rate.code">
+              {{ rate.country }} ({{ rate.code }})
+            </option>
+          </select>
+          <div *ngIf="selectedFromCountry" class="selected-country">
+            <img [src]="'assets/' + selectedFromCountry.code + '.jpg'" class="country-image" alt="Country Flag">
+            <span class="country-code">{{ selectedFromCountry.code }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="toCountrySelect">To Country</label>
+        <div class="select-container">
+          <select class="form-control" id="toCountrySelect" [(ngModel)]="toCountry" name="toCountry" (change)="onCountryChange('to')">
+            <option *ngFor="let rate of exchangeRates" [value]="rate.code">
+              {{ rate.country }} ({{ rate.code }})
+            </option>
+          </select>
+          <div *ngIf="selectedToCountry" class="selected-country">
+            <img [src]="'assets/' + selectedToCountry.code + '.jpg'" class="country-image" alt="Country Flag">
+            <span class="country-code">{{ selectedToCountry.code }}</span>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Convert</button>
+    </form>
+    <hr>
+    <div *ngIf="recipientAmount !== null" class="result">
+      <p>You Send Exactly: {{ getCurrencySymbol(fromCountry) }}{{ amount?.toFixed(2) }}</p>
+      <p>Our Fee: {{ getCurrencySymbol(fromCountry) }}{{ (amount! * 0.1).toFixed(2) }}</p>
+      <p>Bank Transfer Fee: {{ getCurrencySymbol(fromCountry) }}{{ '0.00' }}</p>
+      <p>Total Fee We Will Convert: {{ getCurrencySymbol(fromCountry) }}{{ (amount! - (amount! * 0.1)).toFixed(2) }}</p>
+      <p>Recipient Receives: {{ getCurrencySymbol(toCountry) }}{{ recipientAmount!.toFixed(2) }}</p>
+      <p>Chosen Country Code: {{ toCountry }}</p>
+    </div>
+  </div> 
+   
+    
