@@ -18,6 +18,7 @@ import { MaincontentComponent } from './maincontent/maincontent.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule, Routes } from '@angular/router';
+import { RateComponent } from './rate/rate.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'graph', component: GraphComponent },
+  { path: 'rate', component:RateComponent },
   
 
 ];
@@ -44,7 +47,8 @@ const routes: Routes = [
     NavbarComponent,
     MaincontentComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    RateComponent
   ],
   imports: [
     BrowserModule,

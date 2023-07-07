@@ -48,7 +48,8 @@
   }
   
   .hero-content .btn {
-    background-color: #0366d6; /* Standard blue color */
+    /* background-color: #0366d6;  */
+    background-color: #28a745;
     color: #fff;
     padding: 10px 20px; /* Adjust the padding values as desired */
     border-radius: 5px; /* Adjust the border radius value as desired */
@@ -57,7 +58,7 @@
   }
   
   .hero-content .btn:hover {
-    background-color: #034ea2; /* Darker shade of blue on hover */
+    background-color: #217d3d; /* Darker shade of blue on hover */
   }
   
 

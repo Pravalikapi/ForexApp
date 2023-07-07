@@ -123,7 +123,7 @@ header {
   
   
   .login-button,
-  .signup-button {
+  .signup-button ,.logout-button{
     background-color: #ff9f00;
     color: #fff;
     padding: 11px 16px;
@@ -137,7 +137,7 @@ header {
   }
   
   .login-button:hover,
-  .signup-button:hover {
+  .signup-button:hover ,.logout-button:hover{
     background-color: #e67e00;
     transform: scale(1.1);
   }
